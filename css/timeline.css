@@ -10,69 +10,6 @@ body, html {
 	margin: 0;
 }
 
-/*@font-face {
-	font-family: 'huxico';
-	src:url('../fonts/huxico.eot');
-	src:url('../fonts/huxico.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/huxico.woff') format('woff'),
-		url('../fonts/huxico.ttf') format('truetype'),
-		url('../fonts/huxico.svg#huxico') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}  Made with http://icomoon.io/ */
-
-.main a{
-	color:#0085a1;
-}
-
-.main{
-	width: 65%;
-	margin-left: 35%;
-	max-width: 69em;
-	margin-bottom: 423px;
-	padding: 0 1.375em;
-}
-
-header{
-	font-family: -apple-system,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB",STHeiti,"Microsoft YaHei","Microsoft JhengHei","Source Han Sans SC","Noto Sans CJK SC","Source Han Sans CN","Noto Sans SC","Source Han Sans TC","Noto Sans CJK TC","WenQuanYi Micro Hei",SimSun,sans-serif;
-	width: 35%;
-	padding: 5em 0px !important;
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	margin-left: 100px;
-}
-header h1 {
-	text-align: left;
-    font-size: 50px;
-    color: #252728;
-    font-weight: 100;
-    margin-top: 26px;
-    margin-bottom: 10px;
-    line-height: 1;
-    letter-spacing: 0.1em;
-}
-header p{
-	text-align: left;
-	color: #252728;
-	font-size: 16px;
-	line-height: 1.6em;
-	letter-spacing: 1px;
-	font-weight: 300;
-}
-
-header a {
-	font-weight: 300;
-	text-decoration: none;
-}
-
-header a:hover {
-	text-decoration: none;	
-	color: orangered;
-}
-header img{
-}
-
 #CV{
 	font-size: 20px;
 	letter-spacing: 2px;
@@ -210,9 +147,6 @@ body{
 	background: #fafafa;
 }
 
-
-
-
 @media screen and (max-width: 400px) {
 	.main{
 		width: 100%;
@@ -221,7 +155,7 @@ body{
 	html{
 		font-size: 90%;
 	}
-	header p{
+	.sidebar-left p{
 		font-size: 1.05em;
 		letter-spacing: 0px;
 		margin: 1.5em;
@@ -229,4 +163,52 @@ body{
 	.cbp_tmlabel ul li.skill>span, .cbp_tmlabel ul li.skill>a{
 	    margin-right: 2px;
 	}
+}
+
+/* Sidebar introduction */
+.sidebar-left{
+	font-family: -apple-system,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB",STHeiti,"Microsoft YaHei","Microsoft JhengHei","Source Han Sans SC","Noto Sans CJK SC","Source Han Sans CN","Noto Sans SC","Source Han Sans TC","Noto Sans CJK TC","WenQuanYi Micro Hei",SimSun,sans-serif;
+	position: fixed;
+	width: 300px;
+	padding-left: 30px;
+	margin-top: 30px;
+	margin-right: 20px;
+}
+.sidebar-left h1 {
+	text-align: left;
+    font-size: 50px;
+    color: #252728;
+    font-weight: 100;
+    margin-top: 26px;
+    margin-bottom: 10px;
+    line-height: 1;
+    letter-spacing: 0.1em;
+}
+.sidebar-left p{
+	text-align: left;
+	color: #252728;
+	font-size: 16px;
+	line-height: 1.6em;
+	letter-spacing: 1px;
+	font-weight: 300;
+}
+
+.sidebar-left a {
+	font-weight: 300;
+	text-decoration: none;
+}
+
+.sidebar-left a:hover {
+	text-decoration: none;	
+	color: orangered;
+}
+
+/* main body */
+
+.main{
+	margin-left: 320px;
+}
+
+.main a{
+	color:#0085a1;
 }
