@@ -1,0 +1,1 @@
+{"errors":[{"message":"Expected Iterable, but did not find one for field siteMetadata_2.portfolios.","locations":[{"line":4,"column":7}],"path":["site","siteMetadata","portfolios"]}],"data":{"site":{"siteMetadata":{"portfolios":null}}},"pageContext":{}}

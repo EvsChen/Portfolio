@@ -1,0 +1,26 @@
+.box {
+  /* border: 1px solid #808080; */
+  margin: 20px;
+  height: 300px;
+  width: 70vw;
+}
+
+.title {
+  
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  overflow: hidden;
+}
+
+.box .intro {
+
+}
+
+.box .date {
+
+}
