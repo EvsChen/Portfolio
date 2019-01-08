@@ -1,22 +1,22 @@
 import React from 'react';
-import {Link} from 'gatsby';
+import {Link, navigate} from "gatsby"
 import styles from './entry.module.css';
 
 const Entry = (entry) => {
-  const {title, subtitle, link, coverImg, intro, date} = entry;
+  const {title, subtitle, link, intro, date} = entry;
   return (
-    <div className={styles.box}>
-      <div className="left">
-        <Link to={link}>{title}</Link>
-        <p>{subtitle}</p>
-        <p className={styles.date}>{date}</p>
-      </div>
-      <div className={styles.right}>
-        <p className={styles.intro}>{intro}</p>
-      </div>
+    <div onClick={() => navigate(link)} className={styles.box}>
       <div>
-        <img src={coverImg} alt=""/>
+        <div className={styles.left}>
+          <Link className={styles.title} to={link}>{title}</Link>
+          <p className={styles.subtitle}>{subtitle}</p>
+        </div>
+        <div className={styles.right}>
+          <p className={styles.date}>{date}</p>
+        </div>
+        <div className="clear"></div>
       </div>
+      <p className={styles.intro}>{intro}</p>
     </div>
   );
 };

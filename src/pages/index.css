@@ -1,0 +1,14 @@
+body {
+  font-family: georgia, serif;
+}
+
+a {
+  text-emphasis: none;
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  font-family: georgia, serif;
+  font-size: 2rem;
+}
