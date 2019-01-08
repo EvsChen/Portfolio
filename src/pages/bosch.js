@@ -10,23 +10,13 @@ class Page extends React.Component {
           <h2 className={styles.title}>
             Bosch hackathon - Evacuation Strategy
           </h2>
-          <p>
-            <h3>
-              Our focuses
-            </h3>
-            <ul>
-              <li>Public safety surveillance</li>
-              <li>
-                High density of crowd
-              </li>  
-              <li>
-                Intelligent evacuation strategy under emergency
-              </li>
-              <li>
-                Quick and real-time response
-              </li>
-            </ul>
-          </p>
+          <h3>Our focuses</h3>
+          <ul>
+            <li>Public safety surveillance</li>
+            <li>High density of crowd</li>  
+            <li>Intelligent evacuation strategy under emergency</li>
+            <li>Quick and real-time response</li>
+          </ul>
         </div>
       </Layout>
     );
