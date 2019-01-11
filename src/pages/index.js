@@ -3,6 +3,7 @@ import React from 'react'
 import Entry from '../components/Entry';
 import Layout from '../components/layout';
 import './index.css';
+import './post.less';
 
 const portfolios = [
   {
