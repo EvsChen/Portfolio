@@ -101,6 +101,7 @@ class Page extends React.Component {
               <li>Better LED guidance or Augmented Reality</li>
             </ul>
           </div>
+          <iframe src="http://localhost:8080" frameBorder="0"/>
         </div>
       </Layout>
     );
