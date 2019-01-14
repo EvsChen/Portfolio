@@ -18,7 +18,7 @@ const portfolios = [
     title: '3D Drawing with AR',
     subtitle: 'Draw freely',
     intro: `Inspired by Iron Man, I've always been hoping to draw freely with hands in the 3D space`,
-    link: '/'
+    link: '/paint'
   },
   {
     title: 'Bosch IoT Hackathon',
