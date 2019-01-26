@@ -11,7 +11,7 @@ const portfolios = [
     intro: `Targeting government and business users, the hackathon prototype provides
       a solution for emergency evacuation under massive scale situtations`,
     date: '2017.05',
-    link: '/bosch'
+    link: './bosch'
   },
   {
     title: 'Web Game Controller',
@@ -19,13 +19,13 @@ const portfolios = [
     intro: `The idea of this project comes from Nintendo Switch, 
     where multiple detached controllers can be connected to one host.`,
     date: '2018.06 - 2018.11',
-    link: '/',
+    link: './',
   },
   {
     title: '3D Painting with AR',
     subtitle: 'Draw freely',
     intro: `Inspired by Iron Man, I've always been hoping to draw freely with hands in the 3D space`,
-    link: '/paint'
+    link: './paint'
   },
 ];
 
