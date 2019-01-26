@@ -1,9 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import { StaticQuery, graphql } from 'gatsby'
-
-import Header from './header'
+import { StaticQuery, graphql, Link } from 'gatsby'
 import './layout.css'
 
 const Layout = ({ children }) => (
@@ -27,13 +25,33 @@ const Layout = ({ children }) => (
           ]}
         >
           <html lang="en" />
+          <style>
+            @import url('https://fonts.googleapis.com/css?family=Exo+2:400,600');
+          </style>
         </Helmet>
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <div
+          style={{
+            marginBottom: '1rem',
+          }}
+        >
+          <div
+            style={{
+              margin: '0 auto',
+              maxWidth: '42rem',
+              padding: '1rem 1.0875rem',
+            }}
+          >
+            <h1 style={{ margin: 0 }}>
+              <Link to="/">
+                EvsChen/<span className="c-primary">Portforlio</span>
+              </Link>
+            </h1>
+          </div>
+        </div>
         <div
           style={{
             margin: '0 auto',
-            maxWidth: 960,
-            padding: '0 2rem',
+            maxWidth: '42rem',
           }}
         >
           {children}

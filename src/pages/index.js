@@ -2,8 +2,7 @@ import React from 'react'
 
 import Entry from '../components/Entry';
 import Layout from '../components/layout';
-import './index.css';
-import './post.less';
+import './index.less';
 
 const portfolios = [
   {
@@ -15,7 +14,7 @@ const portfolios = [
     link: '/',
   },
   {
-    title: '3D Drawing with AR',
+    title: '3D Painting with AR',
     subtitle: 'Draw freely',
     intro: `Inspired by Iron Man, I've always been hoping to draw freely with hands in the 3D space`,
     link: '/paint'
