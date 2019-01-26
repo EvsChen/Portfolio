@@ -21,7 +21,7 @@
   "scripts": {
     "start": "gatsby develop",
     "build": "gatsby build",
-    "gh-pages": "gh-pages -d 'public'",
+    "gh-pages": "yarn build && gh-pages -d 'public'",
     "develop": "gatsby develop",
     "format": "prettier --write '**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1"
