@@ -1,3 +1,5 @@
+.DS_Store
+
 # Logs
 logs
 *.log
@@ -38,12 +40,10 @@ jspm_packages/
 
 # TypeScript v1 declaration files
 typings/
-./public
+public/
 
 # Optional npm cache directory
 .npm
-
-.vscode
 
 .cache
 

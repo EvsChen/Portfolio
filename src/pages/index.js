@@ -6,6 +6,14 @@ import './index.less';
 
 const portfolios = [
   {
+    title: 'Bosch IoT Hackathon',
+    subtitle: 'Evacuation strategy under emergency',
+    intro: `Targeting government and business users, the hackathon prototype provides
+      a solution for emergency evacuation under massive scale situtations`,
+    date: '2017.05',
+    link: '/bosch'
+  },
+  {
     title: 'Web Game Controller',
     subtitle: 'Play game with your friends, at any time, on any device',
     intro: `The idea of this project comes from Nintendo Switch, 
@@ -18,14 +26,6 @@ const portfolios = [
     subtitle: 'Draw freely',
     intro: `Inspired by Iron Man, I've always been hoping to draw freely with hands in the 3D space`,
     link: '/paint'
-  },
-  {
-    title: 'Bosch IoT Hackathon',
-    subtitle: 'Evacuation strategy under emergency',
-    intro: `Targeting government and business users, the hackathon prototype provides
-      a solution for emergency evacuation under massive scale situtations`,
-    date: '2017.05',
-    link: '/bosch'
   },
 ];
 

@@ -38,7 +38,7 @@ const Layout = ({ children }) => (
             style={{
               margin: '0 auto',
               maxWidth: '42rem',
-              padding: '1rem 1.0875rem',
+              padding: '1rem 0',
             }}
           >
             <h1 style={{ margin: 0 }}>
