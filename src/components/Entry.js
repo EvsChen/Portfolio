@@ -1,15 +1,13 @@
 import React from 'react';
-import {Link, navigate} from "gatsby"
+import { Link } from 'react-router-dom';
 
 const Entry = (entry) => {
   const {title, subtitle, link, intro, date} = entry;
   return (
-    <div onClick={() => navigate(link)} className="entry">
+    <Link to={link} className="entry">
       <div>
         <div className="left">
-          <Link className="title" to={link}>
-            <h3>{title}</h3>
-          </Link>
+          <h3 className="title">{title}</h3>
         </div>
         <div className="right">
           <p className="date">{date}</p>
@@ -18,7 +16,7 @@ const Entry = (entry) => {
       </div>
       <p className="subtitle">{subtitle}</p>
       <p className="intro">{intro}</p>
-    </div>
+    </Link>
   );
 };
 

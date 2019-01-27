@@ -1,35 +1,10 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
-import { StaticQuery, graphql, Link } from 'gatsby'
-import './layout.css'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 const Layout = ({ children }) => (
-  <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
-          }
-        }
-      }
-    `}
-    render={data => (
-      <React.Fragment>
-        <Helmet
-          title={data.site.siteMetadata.title}
-          meta={[
-            { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
-          ]}
-        >
-          <html lang="en" />
-          <style>
-            @import url('https://fonts.googleapis.com/css?family=Exo+2:400,600');
-          </style>
-        </Helmet>
-        <div
+    <React.Fragment>
+    <div
           style={{
             marginBottom: '1rem',
           }}
@@ -56,9 +31,7 @@ const Layout = ({ children }) => (
         >
           {children}
         </div>
-      </React.Fragment>
-    )}
-  />
+    </React.Fragment>     
 )
 
 Layout.propTypes = {

@@ -1,8 +1,6 @@
 import React from 'react'
-
 import Entry from '../components/Entry';
 import Layout from '../components/layout';
-import './index.less';
 
 const portfolios = [
   {
@@ -32,6 +30,7 @@ const portfolios = [
 const IndexPage = ({ data }) => {
   return (
     <Layout>
+      <p id="build-info" style={{ display: 'none' }}>Built at {BUILD}</p>
       {
         portfolios.map(item => {
           return (
