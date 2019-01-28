@@ -17,7 +17,7 @@ const portfolios = [
     intro: `The idea of this project comes from Nintendo Switch, 
     where multiple detached controllers can be connected to one host.`,
     date: '2018.06 - 2018.11',
-    link: './',
+    link: './wgc',
   },
   {
     title: '3D Painting with AR',
