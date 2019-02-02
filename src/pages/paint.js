@@ -1,7 +1,12 @@
 import React from 'react';
 import Post from '../components/Post';
 import ironManImg from '../images/iron-man-ar-interface.jpg';
-import fingerTrackingGif from '../images/paint/finger_tracking_small.gif'
+import fingerTrackingGif from '../images/paint/finger_tracking_small.gif';
+import rectGif from '../images/paint/rect.gif';
+import zoomRectGif from '../images/paint/zooming.gif';
+import rectHeightGif from '../images/paint/rect-height.gif';
+import drawingGif from '../images/paint/drawing.gif';
+import drawingHeightGif from '../images/paint/drawing-height.gif';
 
 export default class Paint extends React.Component {
   render() {
@@ -48,6 +53,17 @@ export default class Paint extends React.Component {
           It's possible to track more fingers theoretically, but it may hurt the app performance.
         </p>
         <img src={fingerTrackingGif} alt="Finger tracking"/>
+        <h3>Demostration</h3>
+        <h4>Draw</h4>
+        <img src={drawingGif} alt="Draw"/>
+        <h4>Draw a rectangle</h4>
+        <img src={rectGif} alt="Draw rect"/>
+        <h4>Zooming the rectagle</h4>
+        <img src={zoomRectGif} alt="Zoom rect"/>
+        <h4>Draw height</h4>
+        <img src={drawingHeightGif} alt="Draw height"/>
+        <h4>Change the height of the rectangle</h4>
+        <img src={rectHeightGif} alt="Rect height" />
       </Post>
     );
   }
