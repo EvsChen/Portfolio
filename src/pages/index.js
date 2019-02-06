@@ -12,18 +12,18 @@ const portfolios = [
     link: './bosch'
   },
   {
+    title: '3D Painting with AR',
+    subtitle: 'Draw freely',
+    intro: `Inspired by Iron Man, I've always been hoping to draw freely with hands in the 3D space`,
+    link: './paint'
+  },
+  {
     title: 'Web Game Controller',
     subtitle: 'Play game with your friends, at any time, on any device',
     intro: `The idea of this project comes from Nintendo Switch, 
     where multiple detached controllers can be connected to one host.`,
     date: '2018.06 - 2018.11',
     link: './wgc',
-  },
-  {
-    title: '3D Painting with AR',
-    subtitle: 'Draw freely',
-    intro: `Inspired by Iron Man, I've always been hoping to draw freely with hands in the 3D space`,
-    link: './paint'
   },
 ];
 

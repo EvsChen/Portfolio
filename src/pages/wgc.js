@@ -1,6 +1,8 @@
 import React from 'react';
 import Post from '../components/Post';
 import conceptImg from '../images/wgc/concept.jpg';
+import trexImg from '../images/wgc/trex.jpg';
+import acceGif from '../images/wgc/accelerometer.gif';
 
 export default class WGC extends React.Component {
   render() {
@@ -32,18 +34,70 @@ export default class WGC extends React.Component {
         </p>
         <p>
           For example, a laptop can serve as the console and two mobile phones
-          can be the controllers. Also, the console may be an iPad, and the controller can be iPads at the same time.
+          can be the controllers. Also, the console may be an iPad, and the controller can be an iPad at the same time.
           The controllers need to support different kind of operations for different games.
         </p>
-        <h3>
-          Refinement
-        </h3>
+        <h4>
+          Operations supported by mobile browsers
+        </h4>
         <p>
-          
+          By default, mobile device are able to read the user touch input and send them to the server. For example, the position of the touch
+          and multi-touch such as the pinching done by two fingers.
+        </p>
+        <p>
+          Although not used a lot, modern mobile browsers also provice access to the <strong><a href="https://www.w3.org/TR/generic-sensor/">Generic Sensor API</a></strong>.
+          This API allows us developers to use the following kinds of sensor data:
+        </p>
+        <ul>
+          <li>Accelerometer</li>
+          <li>Gyroscope</li>
+          <li>LinearAccelerationSensor</li>
+          <li>AbsoluteOrientationSensor</li>
+          <li>RelativeOrientationSensor</li>
+          <li>AmbientLightSensor</li>
+          <li>Magnetometer</li>
+        </ul>
+        <p>
+          These APIs greatly expand the kinds of motion that the mobile browser can support. More detailed explanation can be viewed
+          in <a href="https://developers.google.com/web/updates/2017/09/sensors-for-the-web">this article</a>.
+        </p>
+        <img src={acceGif} alt="A concept of accelerometer sensor API" style={{height: 200}}/>
+        <h3>
+          Examples
+        </h3>
+        <h4>
+          Chrome T-Rex
+        </h4>
+        <p>
+          Many of the chrome users have discovered this Easter Egg on chrome "No Internet" page. This is a great 
+          example of a simple web-based game. All of the game codes are written in JavaScpript and are open-source.
+          I use this game as an example to demostrate how my project works. 
+        </p>
+        <img src={trexImg} style={{height: 400}} alt=""/>
+        <p>
+          The game requires only one button to control everything from start to end. To make this game more interactive,
+          I try to make use of the accelerometer on the mobile phone. The player can actually <strong>jump together</strong> with the little T-Rex. 
+          By observing the accleration in z-axis, we are able to detect whether the player is jumping or not, and further control the T-Rex.
+        </p>
+        <p>
+          For example, when the acceleration on z-axis is greater than 3, we simulate pressing the "Up" key.
+          And when the acceleration is less than 0, we press the "Down".
         </p>
         <h3>
           Future improvements
         </h3>
+        <h4>
+          Calculation of the device position
+        </h4>
+        <p>
+          When I was experimenting the use of accelerometer, I tried calculating the displacement of the device by using 
+          high school physics knowledge. However, this attempt failed: the accuracy of the sensor api and computation power
+          of the device are not able to give a accurate estimation of the device relative position in the 3D space. Other 
+          methods might be useful to find the position of the device, such as the <strong>gyroscope</strong>.
+        </p>
+        <h4>
+          
+        </h4>
         <h3>
           Demostration  
         </h3>

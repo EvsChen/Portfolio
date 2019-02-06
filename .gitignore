@@ -68,3 +68,5 @@ public/
 .next
 
 .cache/
+
+.DS_Store
