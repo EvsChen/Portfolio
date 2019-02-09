@@ -14,7 +14,8 @@
   "scripts": {
     "start": "webpack-dev-server --open",
     "build": "webpack --config webpack.prod.js",
-    "gh-pub": "yarn build && gh-pages -d 'dist'",
+    "gh-pub": "yarn build && yarn commit-dist && git subtree push --prefix dist origin gh-pages",
+    "commit-dist": "git add dist/ && git commit -m 'update gh-pages'",
     "gh-test": "node browser-sync.js",
     "format": "prettier --write '**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1"
