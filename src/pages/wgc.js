@@ -83,6 +83,20 @@ export default class WGC extends React.Component {
           For example, when the acceleration on z-axis is greater than 3, we simulate pressing the "Up" key.
           And when the acceleration is less than 0, we press the "Down".
         </p>
+        <h4>
+          Konterball
+        </h4>
+        <p>
+          Konterball is a 3D ping-pong game which supports both single-player and multy-player mode. The player can 
+          use the mouse to control the position of the bat and hit the ball against the wall. In multi-player mode, 
+          the player can connect to each other via the Internet.
+        </p>
+        <p>
+          Initially, I want to control the bat by using the relative position of the phone. However, this attempt
+          failed due to the accuracy of the mobile sensor (see detailed description below). Instead, I use the touch 
+          position on the screen and the relative orientation sensor to control both the position and the direction
+          of the bat.
+        </p>
         <h3>
           Future improvements
         </h3>

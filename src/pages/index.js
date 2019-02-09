@@ -30,7 +30,6 @@ const portfolios = [
 const IndexPage = ({ data }) => {
   return (
     <Layout>
-      <p id="build-info" style={{ display: 'none' }}>Built at {BUILD}</p>
       {
         portfolios.map(item => {
           return (

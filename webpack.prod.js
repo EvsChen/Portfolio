@@ -10,8 +10,7 @@ module.exports = merge(common, {
   },
   plugins: [
     new webpack.DefinePlugin({
-      BASENAME: JSON.stringify('/Portfolio'),
-      BUILD: JSON.stringify(new Date().toLocaleString())
+      'process.env.NODE_ENV': JSON.stringify('production')
     })
-  ],
+  ]
 });

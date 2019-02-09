@@ -6,10 +6,11 @@ import paint from './pages/paint';
 import wgc from './pages/wgc';
 import './index.less';
 
+const BASENAME = process.env.NODE_ENV === 'production' ? '/Portfolio' : '/';
 export default class App extends React.Component {
   render() {
     return (
-      <Router basename={BASENAME}>
+      <Router basename={BASENAME || "/"}>
         <div>
           <Route exact path="/" component={index}></Route>
           <Route path="/bosch" component={bosch}></Route>

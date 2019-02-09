@@ -51,7 +51,6 @@ module.exports = {
         use: [
           {
             loader: 'file-loader',
-            options: {}
           }
         ]
       },
@@ -61,10 +60,6 @@ module.exports = {
     new CleanWebpackPlugin('dist'),
     new HtmlWebpackPlugin({
       template: './public/index.html',
-    }),
-    new webpack.DefinePlugin({
-      BASENAME: JSON.stringify('/'),
-      BUILD: JSON.stringify(new Date().toLocaleString())
     }),
     new webpack.HotModuleReplacementPlugin()
   ],
