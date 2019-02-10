@@ -83,6 +83,11 @@ export default class WGC extends React.Component {
           For example, when the acceleration on z-axis is greater than 3, we simulate pressing the "Up" key.
           And when the acceleration is less than 0, we press the "Down".
         </p>
+        <p>
+          Below is a short clip for demostration. I did not "jump" to control the T-rex but use the up and down of my 
+          arm instead, but both will have similar effects .
+        </p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/WM7nFsCEbaw" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         <h4>
           Konterball
         </h4>
