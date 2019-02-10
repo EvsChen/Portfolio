@@ -14,7 +14,7 @@
   "scripts": {
     "start": "webpack-dev-server --open",
     "build": "webpack --config webpack.prod.js",
-    "gh-pub": "yarn commit-dist && git subtree push --prefix dist origin gh-pages",
+    "gh-pub": "git subtree push --prefix dist origin gh-pages",
     "commit-dist": "git add dist/ && git commit -m 'update gh-pages'",
     "gh-test": "node browser-sync.js",
     "format": "prettier --write '**/*.js'",
